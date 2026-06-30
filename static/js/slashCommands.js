@@ -806,6 +806,10 @@ function _syncToggleUI(name, state) {
   }
 }
 
+// Display name for the toggle confirmation message printed in chat.
+// 'bash' shows as 'Terminal' to match the renamed UI label/button.
+const _TOGGLE_DISPLAY_NAME = { bash: 'Terminal' };
+
 async function _quickToggle(name) {
   const toggleMap = { web: 'web-toggle', bash: 'bash-toggle', research: 'research-toggle' };
   const chk = document.getElementById(toggleMap[name]);
@@ -813,7 +817,9 @@ async function _quickToggle(name) {
   chk.checked = !chk.checked;
   _syncToggleUI(name, chk.checked);
   Storage.setToggle(name, chk.checked);
-  await typewriterReply(`${name}: ${chk.checked ? 'on' : 'off'}`);
+  const label = _TOGGLE_DISPLAY_NAME[name] || name;
+  const stateText = name === 'bash' ? (chk.checked ? 'ativado' : 'desativado') : (chk.checked ? 'on' : 'off');
+  await typewriterReply(`${label}: ${stateText}`);
   return true;
 }
 
@@ -825,7 +831,9 @@ async function _applyToggle(name, val) {
   chk.checked = newState;
   _syncToggleUI(name, newState);
   Storage.setToggle(name, newState);
-  await typewriterReply(`${name}: ${newState ? 'on' : 'off'}`);
+  const label = _TOGGLE_DISPLAY_NAME[name] || name;
+  const stateText = name === 'bash' ? (newState ? 'ativado' : 'desativado') : (newState ? 'on' : 'off');
+  await typewriterReply(`${label}: ${stateText}`);
 }
 
 // ── Extracted handler functions ─────────────────────────────────────
