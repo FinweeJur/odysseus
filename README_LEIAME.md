@@ -10,6 +10,8 @@ Cutia é a versão em português brasileiro do [Odysseus](https://github.com/pew
 
 Pense em ChatGPT ou Claude, mas sem nuvem. Seus dados nunca saem de casa. Você escolhe o modelo de IA. Você controla tudo.
 
+**Por que Cutia?** A cutia é um roedor do cerrado brasileiro: pequeno, ágil, inteligente. Não usa força bruta — usa eficiência. Prospera em ambientes hostis através de adaptação e resiliência. Assim é este software: enxuto, rápido, resiliente. Sem peso desnecessário, máxima funcionalidade. Autenticidade sem compromisso.
+
 ---
 
 ## O Que Você Consegue Fazer
