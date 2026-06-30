@@ -487,16 +487,40 @@
     }
   }
 
-  let fullPassCounter = 0;
+  // Debounced per-node full pass: a node added during streaming often gets its
+  // real text filled in asynchronously a beat later, so we still need a
+  // follow-up pass — but one debounced pass per node is enough; the previous
+  // version fired three fixed passes (50/200/800ms) per node regardless of
+  // how many mutations arrived, which compounds badly during AI response
+  // streaming (many added/changed nodes per second).
+  const pendingNodePasses = new WeakMap();
+  function scheduleNodePass(node) {
+    const existing = pendingNodePasses.get(node);
+    if (existing) clearTimeout(existing);
+    pendingNodePasses.set(node, setTimeout(function () {
+      pendingNodePasses.delete(node);
+      fullPass(node);
+    }, 250));
+  }
+
+  // Debounced body-wide pass for characterData bursts (e.g. streamed tokens):
+  // one pass after activity settles, instead of a counter-based trigger that
+  // could still fire many times across a single long streamed response.
+  let bodyPassTimer = null;
+  function scheduleBodyPass() {
+    if (bodyPassTimer) clearTimeout(bodyPassTimer);
+    bodyPassTimer = setTimeout(function () {
+      bodyPassTimer = null;
+      walkTextNodes(document.body);
+    }, 400);
+  }
+
   const observer = new MutationObserver(function (mutations) {
-    let needsFullPass = false;
     for (const m of mutations) {
       for (const node of m.addedNodes) {
         if (node.nodeType === 1) {
           translateAttributes(node);
-          setTimeout(function () { fullPass(node); }, 50);
-          setTimeout(function () { fullPass(node); }, 200);
-          setTimeout(function () { fullPass(node); }, 800);
+          scheduleNodePass(node);
         } else if (node.nodeType === 3) {
           translateTextNode(node);
         }
@@ -505,19 +529,13 @@
         const attrs = ['aria-label', 'title', 'placeholder', 'data-tooltip', 'data-title', 'data-hint', 'data-label', 'value'];
         if (attrs.includes(m.attributeName)) {
           translateAttributes(m.target);
-          setTimeout(function () { walkTextNodes(m.target); }, 100);
+          scheduleNodePass(m.target);
         }
       }
       if (m.type === 'characterData' && m.target) {
         translatedNodes.delete(m.target);
         translateTextNode(m.target);
-        needsFullPass = true;
-      }
-    }
-    if (needsFullPass) {
-      fullPassCounter++;
-      if (fullPassCounter % 5 === 0) {
-        setTimeout(function () { walkTextNodes(document.body); }, 200);
+        scheduleBodyPass();
       }
     }
   });
@@ -539,10 +557,13 @@
         document.querySelectorAll('[aria-label],[title],[placeholder],[data-tooltip],[data-title],[data-hint],[data-label]').forEach(translateAttributes);
       }, delay);
     });
+    // Low-cost safety net only — the debounced MutationObserver above handles
+    // normal updates. This just catches anything that slips through without
+    // re-scanning the whole page every few seconds.
     setInterval(function () {
       fullPass(document.body);
-    }, 20000);
-    console.log('[Odysseus PT-BR v2] ' + Object.keys(DICT).length + ' termos | text-node walker ativo permanentemente.');
+    }, 120000);
+    console.log('[Odysseus PT-BR v2] ' + Object.keys(DICT).length + ' termos | text-node walker ativo.');
   }
 
   if (document.body && document.body.children.length > 0) {
