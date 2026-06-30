@@ -1,14 +1,29 @@
+# 🇧🇷 Odysseus em Português Brasileiro
+
+> **Versão Traduzida do [Odysseus Original](https://github.com/pewdiepie-archdaemon/odysseus)**
+>
+> Este é um **fork de tradução** mantido para a comunidade brasileira. Créditos totais ao [pewdiepie-archdaemon](https://github.com/pewdiepie-archdaemon) pelo projeto original incrível! 🙏
+
+[![GitHub](https://img.shields.io/badge/Original-pewdiepie--archdaemon/odysseus-blue)](https://github.com/pewdiepie-archdaemon/odysseus)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![Tradução PT-BR](https://img.shields.io/badge/Tradução-PT--BR-success)](https://github.com/FinweeJur/odysseus/tree/feature/pt-br-translation)
+
+---
+
 # Odysseus
 
 ```
 ───────────────────────────────────────────────
  ⊹ ࣪ ˖ ૮( ˶ᵔ ᵕ ᵔ˶ )っ  Odysseus vers. 1.0
+                 🇧🇷 PT-BR Edition
 ───────────────────────────────────────────────
 ```
 
 ![Odysseus](docs/odysseus.jpg)
 
 A self-hosted AI workspace -- meant to be the self-hosted version of the UI experience you get from ChatGPT and Claude. But with more jank and fun. Running on your own hardware, with your own data -- local-first, privacy-first, and no trojan.
+
+**🇧🇷 Versão em Português Brasileiro:** Interface 100% traduzida (827+ strings), com facilitadores de instalação para Windows/Linux/Mac.
 
 ## Features
   - **Chat** -- chat with any local model or API; adding them is super simple.<br>　<sub>vLLM · llama.cpp · Ollama · OpenRouter · OpenAI</sub>
@@ -43,7 +58,28 @@ A full, hover-to-play tour lives on the landing page (`docs/index.html`).
 
 </details>
 
-## Quick Start
+## 🚀 Início Rápido PT-BR
+
+### Instalação Facilitada
+
+**Windows:**
+```powershell
+git clone --branch feature/pt-br-translation https://github.com/FinweeJur/odysseus.git
+cd odysseus
+.\install-ptbr.ps1
+```
+
+**Linux/Mac:**
+```bash
+git clone --branch feature/pt-br-translation https://github.com/FinweeJur/odysseus.git
+cd odysseus
+chmod +x install-ptbr.sh
+./install-ptbr.sh
+```
+
+Depois configure modelos/busca/email dentro de **Settings**. Veja [INSTALL_PTBR.md](INSTALL_PTBR.md) para detalhes.
+
+### Quick Start (Original)
 
 Defaults work out of the box: clone, run, then configure models/search/email
 inside **Settings**. Only edit `.env` for deployment-level overrides like
@@ -366,7 +402,32 @@ Common internal-only ports from the default docs/compose setup:
 | `11434` | Ollama |
 | `8000-8020` | Common local model/provider APIs |
 
-## Contributing
+## 🇧🇷 Sobre Este Fork PT-BR
+
+Este é um **fork de tradução oficial** mantido para a comunidade de língua portuguesa. 
+
+### O que é diferente?
+
+- ✅ Interface completa traduzida para português brasileiro (827+ strings)
+- ✅ Facilitadores de instalação para Windows/Linux/Mac
+- ✅ Documentação em português ([INSTALL_PTBR.md](INSTALL_PTBR.md))
+- ✅ Totalmente compatível com o projeto original
+- ✅ Baseado na branch `feature/pt-br-translation`
+
+### Como contribuir com melhorias na tradução?
+
+1. Abra uma [issue](https://github.com/FinweeJur/odysseus/issues) se encontrar strings não traduzidas
+2. Faça um PR com melhorias de tradução
+3. Seu feedback ajuda a comunidade brasileira!
+
+### Mantém-se atualizado com o projeto original?
+
+Sim! Este fork sincroniza regularmente com a versão original ([pewdiepie-archdaemon/odysseus](https://github.com/pewdiepie-archdaemon/odysseus)) para receber novas funcionalidades e correções.
+
+---
+
+## Contributing (Original)
+
 Help is welcome. The best entry points are fresh-install testing, provider setup
 bugs, mobile/editor polish, docs, and small focused refactors. See
 [ROADMAP.md](ROADMAP.md) for the current help-wanted list.
@@ -415,6 +476,33 @@ services/  docs, memory, search, hwfit (Cookbook) …
 static/    index.html + app.js + style.css + js/ (modular front-end)
 docs/      landing page (index.html) + preview clips
 ```
+
+---
+
+## 🙏 Créditos
+
+### Projeto Original
+- **[Odysseus](https://github.com/pewdiepie-archdaemon/odysseus)** — Criado por [@pewdiepie-archdaemon](https://github.com/pewdiepie-archdaemon)
+  - Workspace AI self-hosted incrível
+  - Licença: MIT
+
+### Tradução PT-BR
+- **Tradução:** Comunidade brasileira
+- **Coordenação:** [@FinweeJur](https://github.com/FinweeJur)
+- **Assistência IA:** Claude (Anthropic)
+
+### Tecnologias & Dependências
+- FastAPI, SQLite, ChromaDB, Ollama, vLLM, llama.cpp, Playwright
+- Veja `requirements.txt` para a lista completa
+
+### Componentes Adaptados
+- Deep Research: Adaptado de [Alibaba DeepResearch](https://github.com/Alibaba-NLP/DeepResearch)
+- Cookbook: Baseado em [llmfit](https://github.com/AlexsJones/llmfit)
+- Agent Tools: Construído em [opencode](https://github.com/anomalyco/opencode)
+
+---
+
+**Este é um fork comunitário. Todos os créditos pelo design e engenharia original vão ao [@pewdiepie-archdaemon](https://github.com/pewdiepie-archdaemon). Contribuições de tradução e melhorias são bem-vindas! 🚀**
 
 ## Data
 All user data lives in `data/` (gitignored): `app.db` (sessions, messages, documents),
