@@ -1,38 +1,37 @@
-# 🐭 Cutia — Lançamento Oficial
+# Cutia — Lançamento da Versão PT-BR
 
 **Data:** 29 de junho de 2026  
 **Versão:** 1.0 PT-BR  
-**Status:** ✅ Pronto para Produção
+**Status:** Pronto para Produção
 
 ---
 
 ## O Que é Cutia?
 
-**Cutia** é a versão em português brasileiro do [Odysseus](https://github.com/pewdiepie-archdaemon/odysseus), um workspace de IA self-hosted e privado.
+Cutia é a versão em português brasileiro do [Odysseus](https://github.com/pewdiepie-archdaemon/odysseus), um workspace de IA self-hosted e privado.
 
-Um roedor ágil, inteligente e adaptável — assim é Cutia: rápida de instalar, potente de usar, feita para a comunidade brasileira.
-
----
-
-## Ao Vivo Agora! 🎉
-
-### 🔗 Comece Aqui:
-👉 **[github.com/FinweeJur/odysseus](https://github.com/FinweeJur/odysseus)**
-
-**Branch:** `feature/pt-br-translation`
+A cutia é um roedor do cerrado brasileiro — animal de elegância soberana, vulnerável em força mas imbatível em inteligência. Assim é Cutia: rápido de instalar, potente de usar, feito autenticamente para a comunidade brasileira.
 
 ---
 
-## ⚡ Instalação Rápida
+## Ao Vivo Agora
 
-### Windows (1 minuto)
+Comece aqui: **[github.com/FinweeJur/odysseus](https://github.com/FinweeJur/odysseus)**
+
+Branch: `feature/pt-br-translation`
+
+---
+
+## Instalação — 5 Minutos
+
+### Windows
 ```powershell
 git clone --branch feature/pt-br-translation https://github.com/FinweeJur/odysseus.git
 cd odysseus
 .\install-ptbr.ps1
 ```
 
-### Linux/Mac (1 minuto)
+### Linux e macOS
 ```bash
 git clone --branch feature/pt-br-translation https://github.com/FinweeJur/odysseus.git
 cd odysseus
@@ -40,62 +39,83 @@ chmod +x install-ptbr.sh
 ./install-ptbr.sh
 ```
 
-Pronto! Acesse http://127.0.0.1:7000 e comece a usar Cutia em português.
+Acesse `http://127.0.0.1:7000` e comece a usar Cutia em português.
 
 ---
 
-## ✨ O Que Você Ganha
+## Por Que Cutia?
 
-✅ **Interface 100% em português**
+Odysseus é poderoso. Mas estar em português não é apenas tradução — é pertencimento.
+
+A cutia do cerrado brasileiro representa princípios que aplicamos em software:
+
+**Agilidade** — Resposta rápida a mudança. Não engessada, não obsoleta.
+
+**Inteligência** — Adapta-se ao terreno. Reconhece padrões. Otimiza caminhos.
+
+**Eficiência** — Usa exatamente o necessário, nem mais. Cada recurso tem propósito.
+
+**Independência** — Não depende de intermediários. Roda no seu computador.
+
+**Resiliência** — Enfrenta adversidades sem quebrar. Continua operante.
+
+Cutia é software que herda essas virtudes.
+
+---
+
+## O Que Você Recebe
+
+✅ **Interface 100% em Português**
 - 827+ strings traduzidas
 - Chat, Documentos, Calendário, E-mail, Tarefas
-- Configurações amigáveis
+- Toda a experiência em português fluido e natural
 
-✅ **Instalação facilitada**
-- Scripts automáticos para Windows/Linux/Mac
+✅ **Instalação Facilitada**
+- Scripts automáticos para Windows, Linux e macOS
 - Sem complicações técnicas
-- Pronto para iniciantes
+- Pronto para iniciantes e profissionais
 
-✅ **Privacidade total**
-- Roda no seu computador
-- Seus dados, seus modelos
-- Zero envio para nuvem
+✅ **Privacidade Total**
+- Roda completamente no seu computador
+- Seus dados, seus modelos, sua segurança
+- Sem transmissão para nuvem, sem telemetria
 
-✅ **IA local + poderosa**
-- Suporte a Ollama (LLMs locais)
-- Ou use APIs (OpenAI, Claude, etc.)
-- Você escolhe o modelo
+✅ **IA Local e Poderosa**
+- Suporte a Ollama (modelos LLM rodando localmente)
+- Ou integração com APIs profissionais (OpenAI, Claude, etc.)
+- Você escolhe o modelo e o provedor
 
-✅ **Funcionalidades completas**
+✅ **Funcionalidades Completas**
 - Chat com IA
-- Agentes autônomos
-- Edição de documentos
+- Agentes autônomos que executam tarefas sozinhos
+- Edição colaborativa de documentos
 - Calendário sincronizado
-- E-mail inteligente
-- Tarefas e lembretes
-- Pesquisa profunda
+- E-mail com análise inteligente
+- Sistema de tarefas e lembretes
+- Pesquisa profunda em múltiplas fontes
 
 ---
 
-## 🔐 Segurança & Privacidade
+## Segurança e Privacidade
 
-- ✅ Código aberto (MIT License)
-- ✅ Sem telemetria ou rastreamento
-- ✅ Seus dados nunca saem do seu computador
-- ✅ Autenticação local
-- ✅ Pronto para ambiente de rede privada
+- Código aberto (MIT License)
+- Sem telemetria ou rastreamento
+- Seus dados nunca saem do seu computador
+- Autenticação local e controles de acesso
+- Preparado para ambiente de rede privada
 
 ---
 
-## 📚 Documentação
+## Documentação Completa
 
-- **[README_CUTIA_PT-BR.md](README_CUTIA_PT-BR.md)** — Guia completo em português
-- **[INSTALL_PTBR.md](INSTALL_PTBR.md)** — Passo-a-passo de instalação
+- **[README.md](README.md)** — Guia completo de Cutia
+- **[INSTALL_PTBR.md](INSTALL_PTBR.md)** — Instruções detalhadas de instalação
+- **[CERRADO_PALETTE.md](CERRADO_PALETTE.md)** — Paleta de cores e branding
 - **[PR_I18N_PROPOSAL.md](PR_I18N_PROPOSAL.md)** — Proposta de sistema de idiomas
 
 ---
 
-## 🤝 Créditos
+## Créditos
 
 - **Odysseus Original:** [@pewdiepie-archdaemon](https://github.com/pewdiepie-archdaemon)
 - **Tradução PT-BR:** Comunidade brasileira
@@ -104,34 +124,35 @@ Pronto! Acesse http://127.0.0.1:7000 e comece a usar Cutia em português.
 
 ---
 
-## 🎯 Visão Futura
+## Visão Futura
 
 Cutia é o início de um ecossistema em português:
 
-1. ✅ **Fase 1 (Agora):** Interface PT-BR completa + instaladores
+1. ✅ **Fase 1 (Agora):** Interface PT-BR completa com instaladores
 2. 🔄 **Fase 2 (Próxima):** Sistema i18n nativo no Odysseus original
-3. 🌍 **Fase 3 (Futuro):** Mais idiomas (ES, FR, DE, etc.)
+3. 🌍 **Fase 3 (Futuro):** Suporte a mais idiomas (ES, FR, DE)
 4. 🎁 **Fase 4 (Horizonte):** Marketplace de skills em português
 
 ---
 
-## 💬 Perguntas?
+## Perguntas?
 
-- 📖 Leia o [README completo em português](README_CUTIA_PT-BR.md)
-- 🐛 Abra uma [issue](https://github.com/FinweeJur/odysseus/issues) se encontrar bug
-- 🤝 Contribua com [PR](https://github.com/FinweeJur/odysseus/pulls) melhorando a tradução
-- 💭 Dúvidas? Veja [FAQ](INSTALL_PTBR.md#perguntas-frequentes) em português
+- Leia o **[README.md](README.md)** completo
+- Abra uma **[issue](https://github.com/FinweeJur/odysseus/issues)** se encontrar problema
+- Contribua com **[PR](https://github.com/FinweeJur/odysseus/pulls)** melhorando a tradução
+- Dúvidas sobre instalação? Veja **[INSTALL_PTBR.md](INSTALL_PTBR.md)**
 
 ---
 
-## 🚀 Comece Agora!
+## Comece Agora
 
 ```bash
 git clone --branch feature/pt-br-translation https://github.com/FinweeJur/odysseus.git
+cd odysseus
+# Windows: .\install-ptbr.ps1
+# Linux/Mac: chmod +x install-ptbr.sh && ./install-ptbr.sh
 ```
 
-**Bem-vindo a Cutia — sua IA privada, local, brasileira!** 🐭
+**Bem-vindo a Cutia — sua IA privada, local, brasileira.**
 
----
-
-*"Ágil, inteligente, adaptável — como uma cutia."*
+Ágil, inteligente, adaptável. Como uma cutia do cerrado.
