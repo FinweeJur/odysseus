@@ -1,0 +1,161 @@
+{
+  "language": "pt-BR",
+  "languageName": "Português Brasileiro",
+  "languageNative": "Português (Brasil)",
+
+  "settings": {
+    "general": "Geral",
+    "language": "Idioma",
+    "languageHelp": "Selecione o idioma da interface",
+    "theme": "Tema",
+    "autoSave": "Salvar automaticamente"
+  },
+
+  "chat": {
+    "newChat": "Novo chat",
+    "loading": "Carregando...",
+    "sending": "Enviando...",
+    "typePlaceholder": "Digite sua mensagem aqui...",
+    "errorLoadingChat": "Erro ao carregar chat",
+    "failedToSend": "Falha ao enviar mensagem"
+  },
+
+  "admin": {
+    "title": "Painel de Administração",
+    "users": "Usuários",
+    "endpoints": "Endpoints",
+    "tokens": "Tokens",
+    "webhooks": "Webhooks",
+    "renameUser": "Renomear",
+    "deleteUser": "Remover",
+    "addUser": "Adicionar usuário",
+    "accessDenied": "Acesso negado"
+  },
+
+  "gallery": {
+    "title": "Galeria",
+    "noPhotos": "Nenhuma foto ainda",
+    "uploadPhotos": "Enviar fotos ou vídeos",
+    "favorite": "Favorita",
+    "delete": "Excluir",
+    "deleteConfirm": "Excluir esta foto? Isto não pode ser desfeito.",
+    "deleteSelected": "Excluir selecionados",
+    "selectPhotos": "Selecione fotos primeiro",
+    "search": "Buscar fotos, tags..."
+  },
+
+  "documents": {
+    "title": "Documentos",
+    "newDocument": "Novo documento",
+    "deleteDocument": "Excluir documento",
+    "saving": "Salvando...",
+    "saved": "Salvo",
+    "failedToSave": "Falha ao salvar",
+    "placeholder": "Comece a escrever..."
+  },
+
+  "calendar": {
+    "title": "Calendário",
+    "createEvent": "Criar evento",
+    "deleteEvent": "Excluir evento",
+    "saveEvent": "Salvar evento",
+    "eventName": "Nome do evento",
+    "startDate": "Data de início",
+    "endDate": "Data de fim",
+    "noEvents": "Nenhum evento"
+  },
+
+  "tasks": {
+    "title": "Tarefas",
+    "newTask": "Nova tarefa",
+    "deleteTask": "Excluir tarefa",
+    "markDone": "Marcar como concluído",
+    "pending": "Pendente",
+    "completed": "Concluído",
+    "dueDate": "Data de vencimento",
+    "noTasks": "Nenhuma tarefa"
+  },
+
+  "email": {
+    "title": "E-mail",
+    "inbox": "Caixa de entrada",
+    "reply": "Responder",
+    "replyAll": "Responder a todos",
+    "forward": "Encaminhar",
+    "search": "Buscar e-mails...",
+    "previousEmail": "E-mail anterior",
+    "nextEmail": "Próximo e-mail",
+    "failedToLoad": "Falha ao carregar e-mail"
+  },
+
+  "memory": {
+    "title": "Memória",
+    "skills": "Habilidades",
+    "noSkills": "Nenhuma habilidade salva",
+    "addSkill": "Adicionar habilidade",
+    "deleteSkill": "Excluir habilidade",
+    "editSkill": "Editar habilidade",
+    "skillName": "Nome da habilidade",
+    "description": "Descrição"
+  },
+
+  "common": {
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "add": "Adicionar",
+    "remove": "Remover",
+    "rename": "Renomear",
+    "confirm": "Confirmar",
+    "close": "Fechar",
+    "search": "Buscar...",
+    "filter": "Filtrar",
+    "export": "Exportar",
+    "import": "Importar",
+    "download": "Baixar",
+    "upload": "Enviar",
+    "loading": "Carregando...",
+    "saving": "Salvando...",
+    "saved": "Salvo",
+    "error": "Erro",
+    "success": "Sucesso",
+    "warning": "Aviso",
+    "info": "Informação",
+    "failed": "Falha",
+    "failedToLoad": "Falha ao carregar",
+    "failedToSave": "Falha ao salvar",
+    "failedToDelete": "Falha ao excluir",
+    "areYouSure": "Tem certeza?",
+    "noResults": "Nenhum resultado",
+    "selectAll": "Selecionar todos",
+    "clearAll": "Limpar tudo",
+    "back": "Voltar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "finish": "Concluir",
+    "skip": "Pular"
+  },
+
+  "errors": {
+    "unauthorized": "Não autorizado",
+    "forbidden": "Acesso proibido",
+    "notFound": "Não encontrado",
+    "serverError": "Erro do servidor",
+    "connectionError": "Erro de conexão",
+    "timeoutError": "Tempo limite excedido",
+    "validationError": "Erro de validação",
+    "requiredField": "Campo obrigatório",
+    "invalidEmail": "E-mail inválido",
+    "passwordTooShort": "Senha muito curta",
+    "passwordMismatch": "As senhas não correspondem"
+  },
+
+  "validation": {
+    "required": "Este campo é obrigatório",
+    "minLength": "Mínimo {count} caracteres",
+    "maxLength": "Máximo {count} caracteres",
+    "invalidFormat": "Formato inválido",
+    "alreadyExists": "Já existe"
+  }
+}
