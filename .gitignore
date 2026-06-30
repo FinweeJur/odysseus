@@ -7,8 +7,10 @@ dist/
 build/
 !static/js/editor/build/
 venv/
+venv_*/
 .venv/
 *.egg
+*.exe
 
 # Environment
 .env
@@ -60,6 +62,11 @@ output.txt.txt
 *.webp
 *.tiff
 *.pdf
+
+# …except the app's own PWA/favicon icons — required for the app to render
+# an icon at all; not user-generated content.
+!static/icon-192.png
+!static/icon-512.png
 
 # …except shipped demo assets in docs/ that the README links to.
 !docs/*.jpg
