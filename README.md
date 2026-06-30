@@ -1,537 +1,401 @@
-# 🇧🇷 Odysseus em Português Brasileiro
-
-> **Versão Traduzida do [Odysseus Original](https://github.com/pewdiepie-archdaemon/odysseus)**
->
-> Este é um **fork de tradução** mantido para a comunidade brasileira. Créditos totais ao [pewdiepie-archdaemon](https://github.com/pewdiepie-archdaemon) pelo projeto original incrível! 🙏
-
-[![GitHub](https://img.shields.io/badge/Original-pewdiepie--archdaemon/odysseus-blue)](https://github.com/pewdiepie-archdaemon/odysseus)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Tradução PT-BR](https://img.shields.io/badge/Tradução-PT--BR-success)](https://github.com/FinweeJur/odysseus/tree/feature/pt-br-translation)
-
----
-
-# Odysseus
+# 🇧🇷 Cutia — Odysseus em Português Brasileiro
 
 ```
 ───────────────────────────────────────────────
  ⊹ ࣪ ˖ ૮( ˶ᵔ ᵕ ᵔ˶ )っ  Odysseus vers. 1.0
-                 🇧🇷 PT-BR Edition
+           🐭 Cutia Edition (PT-BR)
 ───────────────────────────────────────────────
 ```
 
-![Odysseus](docs/odysseus.jpg)
+## Bem-vindo a Cutia!
 
-A self-hosted AI workspace -- meant to be the self-hosted version of the UI experience you get from ChatGPT and Claude. But with more jank and fun. Running on your own hardware, with your own data -- local-first, privacy-first, and no trojan.
+> **Cutia** é a versão em português brasileiro do [Odysseus](https://github.com/pewdiepie-archdaemon/odysseus), o workspace de IA self-hosted. 
+>
+> Cutia é um roedor sul-americano conhecido por ser ágil, inteligente e adaptável — características que também descrevem este projeto! 🐭
 
-**🇧🇷 Versão em Português Brasileiro:** Interface 100% traduzida (827+ strings), com facilitadores de instalação para Windows/Linux/Mac.
+[![GitHub](https://img.shields.io/badge/Odysseus%20Original-pewdiepie--archdaemon-blue)](https://github.com/pewdiepie-archdaemon/odysseus)
+[![Licença](https://img.shields.io/badge/Licença-MIT-green)](LICENSE)
+[![Tradução PT-BR](https://img.shields.io/badge/Tradução%20PT--BR-Cutia-success)](https://github.com/FinweeJur/odysseus/tree/feature/pt-br-translation)
 
-## Features
-  - **Chat** -- chat with any local model or API; adding them is super simple.<br>　<sub>vLLM · llama.cpp · Ollama · OpenRouter · OpenAI</sub>
-  - **Agent** -- hand it tools and let it run the whole task itself.<br>　<sub>built on [opencode](https://github.com/anomalyco/opencode) · MCP · web · files · shell · skills · memory</sub>
-  - **Cookbook** -- Scans your hardware, recommends models, click to download and serve.. easy!<br>　<sub>built on [llmfit](https://github.com/AlexsJones/llmfit) · VRAM-aware · GGUF / FP8 / AWQ · fit scoring · vLLM / llama.cpp serving</sub>
-  - **Deep Research** -- multi-step runs that gather, read, and synthesize sources into a nice visual report.<br>　<sub>adapted from [Tongyi DeepResearch](https://github.com/Alibaba-NLP/DeepResearch)</sub>
-  - **Compare** -- a fun tool to compare models side by side. Test completely blind, no bias!<br>　<sub>multi-model · blind test · synthesis</sub>
-  - **Documents** -- YOU write the text, AI is there to assist, not the opposite.<br>　<sub>multi-tab editor · markdown · HTML · CSV · syntax highlighting · AI edits · suggestions</sub>
-  - **Memory / Skills** -- Persistent memory and skills, your agent evolves over time as it better understands you and your tasks!<br>　<sub>ChromaDB · fastembed (ONNX) · vector + keyword retrieval · import/export</sub>
-  - **Email** -- IMAP/SMTP inbox with AI triage built in: urgency reminders, auto-tag, auto-summary, auto-reply drafts, auto-spam.<br>　<sub>IMAP · SMTP · per-account routing · CalDAV-aware</sub>
-  - **Notes & Tasks** -- Quick notes with reminders, a todo list, and scheduled tasks the agent can act on.<br>　<sub>note pings · checklist · cron-style tasks · ntfy / browser / email channels</sub>
-  - **Calendar** -- Local-first calendar with CalDAV sync to Radicale / Nextcloud / Apple / Fastmail.<br>　<sub>CalDAV pull · .ics import/export · per-calendar colors · agent-aware</sub>
-  - **Works on mobile** -- looks and runs great on your phone, not just desktop.<br>　<sub>responsive · installable (PWA) · touch gestures</sub>
-  - **Extras** -- more to explore, happy if you give it a go!<br>　<sub>image editor · theme editor · file uploads (vision + PDF) · web search · presets · sessions · 2FA</sub>
+---
 
-## Demo
-A full, hover-to-play tour lives on the landing page (`docs/index.html`).
+## O Conceito: Cutia
 
-<details>
-<summary>Screenshots / clips</summary>
+**Cutia** é uma iniciativa da comunidade brasileira para trazer o Odysseus para falantes de português. Não é um fork separado — é a **versão oficial em português** mantida pela comunidade, com:
 
-### Chat & Agents
-![Chat & Agents](docs/chat.gif)
-### Deep Research
-![Deep Research](docs/research.gif)
-### Compare
-![Compare](docs/compare.gif)
-### Documents
-![Documents](docs/document.gif)
-### Notes & Tasks
-![Notes & Tasks](docs/notes.gif)
+- 🇧🇷 **Interface 100% em português** (827+ strings traduzidas)
+- 🚀 **Instalação facilitada** com scripts automáticos
+- 📚 **Documentação completa em português**
+- 🤝 **Créditos totais** ao criador original, [@pewdiepie-archdaemon](https://github.com/pewdiepie-archdaemon)
+- 🔄 **Sincronizada regularmente** com a versão original
 
-</details>
+---
 
-## 🚀 Início Rápido PT-BR
+## 🎯 O Que é Odysseus/Cutia?
 
-### Instalação Facilitada
+Um **workspace de IA self-hosted** — pense em ChatGPT ou Claude, mas rodando no seu computador, com seus próprios dados, sem intermediários.
 
-**Windows:**
+```
+┌─────────────────────────────────────────┐
+│  Seu Computador / Seu Servidor          │
+│                                         │
+│  ┌─────────────────────────────────┐   │
+│  │  Cutia (Interface Web)          │   │
+│  │  • Chat com IA Local           │   │
+│  │  • Documentos & Edição          │   │
+│  │  • Calendário & Tarefas         │   │
+│  │  • E-mail Inteligente           │   │
+│  └─────────────────────────────────┘   │
+│          ↓                               │
+│  ┌─────────────────────────────────┐   │
+│  │  Seus Modelos de IA             │   │
+│  │  • Ollama (Local)               │   │
+│  │  • ou APIs Externas             │   │
+│  └─────────────────────────────────┘   │
+│          ↓                               │
+│  ┌─────────────────────────────────┐   │
+│  │  Seus Dados (Privados)          │   │
+│  │  • Documentos                   │   │
+│  │  • E-mails                      │   │
+│  │  • Memória & Notas              │   │
+│  └─────────────────────────────────┘   │
+└─────────────────────────────────────────┘
+```
+
+**Zero dados enviados para nuvem. Privacidade total.**
+
+---
+
+## ✨ Principais Funcionalidades
+
+### 💬 Chat
+- Converse com qualquer modelo de IA local ou API
+- Suporte a: Ollama, vLLM, llama.cpp, OpenAI, Claude, OpenRouter
+- Histórico e sessões persistentes
+- Compartilhamento e controle de acesso
+
+### 🤖 Agentes
+- Configure uma IA com ferramentas (navegador, arquivos, terminal, etc.)
+- Deixe ela executar tarefas completas sozinha
+- Suporte a MCP (Model Context Protocol)
+- Memória persistente — o agente aprende com você
+
+### 📊 Cookbook
+- Escaneia seu hardware (CPU, GPU, VRAM)
+- Recomenda modelos que rodam bem na sua máquina
+- Baixa e serve modelos com 1 clique
+- Suporta: GGUF, FP8, AWQ, quantização inteligente
+
+### 🔬 Pesquisa Profunda
+- IA pesquisa múltiplas fontes automaticamente
+- Sintetiza em relatório visual
+- Ideal para: pesquisa acadêmica, análise de concorrentes, investimentos
+
+### 📄 Documentos
+- Editor de texto multi-abas com IA integrada
+- Suporte a: Markdown, HTML, CSV
+- Edições sugeridas pela IA
+- Sintaxe highlighting para código
+
+### 🧠 Memória & Habilidades
+- Armazene conhecimento persistentemente
+- A IA usa sua memória em futuras conversas
+- Habilidades customizadas (skills)
+- Busca semântica vetorial
+
+### 📧 E-mail Inteligente
+- Conecte seu e-mail (IMAP/SMTP)
+- IA triagem automática
+- Tags, resumos e rascunhos de resposta automáticos
+- Integração com calendário (CalDAV)
+
+### 📅 Calendário
+- Calendário local-first com suporte CalDAV
+- Sincroniza com: Apple Calendar, Google Calendar, Nextcloud, Radicale
+- Cores por calendário
+- Integração com tarefas e lembretes
+
+### ✅ Notas & Tarefas
+- Anotações rápidas com lembretes
+- Listas de tarefas com agendamento
+- Tarefas automáticas que o agente executa
+- Notificações (navegador, e-mail, ntfy)
+
+### 📱 Responsivo & Mobile
+- Funciona perfeitamente em celular
+- Instalável como app (PWA)
+- Gestos touch
+- Dark mode automático
+
+### 🎨 Extras
+- Editor de imagens integrado
+- Editor de temas visual
+- Upload de arquivos com visão computacional
+- Busca web local
+- Presets de chat
+
+---
+
+## 🚀 Começar em 5 Minutos
+
+### Windows
 ```powershell
 git clone --branch feature/pt-br-translation https://github.com/FinweeJur/odysseus.git
 cd odysseus
 .\install-ptbr.ps1
+# Acesse: http://127.0.0.1:7000
 ```
 
-**Linux/Mac:**
+### Linux/Mac
 ```bash
 git clone --branch feature/pt-br-translation https://github.com/FinweeJur/odysseus.git
 cd odysseus
 chmod +x install-ptbr.sh
 ./install-ptbr.sh
+# Acesse: http://127.0.0.1:7000
 ```
 
-Depois configure modelos/busca/email dentro de **Settings**. Veja [INSTALL_PTBR.md](INSTALL_PTBR.md) para detalhes.
-
-### Quick Start (Original)
-
-Defaults work out of the box: clone, run, then configure models/search/email
-inside **Settings**. Only edit `.env` for deployment-level overrides like
-`APP_BIND`, `APP_PORT`, `AUTH_ENABLED`, `DATABASE_URL`, or a pre-seeded admin password.
-
-On first setup, Odysseus creates an admin account (`admin` unless
-`ODYSSEUS_ADMIN_USER` is set) and prints a temporary password in the terminal.
-For Docker installs, the same line is in `docker compose logs odysseus`.
-Use that for the first login, then change it in **Settings**.
-
-Contributing? See [CONTRIBUTING.md](CONTRIBUTING.md) for setup, testing, and
-pull request guidelines.
-
-### Docker (recommended)
+### Docker (Recomendado)
 ```bash
-git clone https://github.com/pewdiepie-archdaemon/odysseus.git
+git clone --branch feature/pt-br-translation https://github.com/FinweeJur/odysseus.git
 cd odysseus
-cp .env.example .env       # optional, but recommended for explicit defaults
 docker compose up -d --build
-```
-Open `http://localhost:7000` when the containers are healthy. Docker Compose
-binds the web UI to `127.0.0.1` by default. If the port is taken, set
-`APP_PORT=7001` in `.env` and recreate the container. Set `APP_BIND=0.0.0.0`
-only when you intentionally want LAN/reverse-proxy access.
-
-### Native Linux / macOS
-```bash
-git clone https://github.com/pewdiepie-archdaemon/odysseus.git
-cd odysseus
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python setup.py
-python -m uvicorn app:app --host 127.0.0.1 --port 7000
-```
-Requirements: Python 3.11+. Cookbook also needs `tmux` for background model
-downloads and serves. The app itself is lightweight; local model serving is the
-heavy part and depends on the model, runtime, GPU, and VRAM, so small hosts can
-connect to API or remote model servers instead. Use `--host 0.0.0.0` only when you intentionally want LAN/reverse-proxy access.
-
-### Apple Silicon
-Docker on macOS cannot use the Metal GPU. For GPU-accelerated Cookbook on an
-M-series Mac, run Odysseus natively:
-
-```bash
-git clone https://github.com/pewdiepie-archdaemon/odysseus.git
-cd odysseus
-./start-macos.sh
+# Acesse: http://localhost:7000
 ```
 
-It launches at `http://127.0.0.1:7860`. To expose it to your phone over a trusted LAN/VPN such as Tailscale, bind all interfaces:
-
-```bash
-ODYSSEUS_HOST=0.0.0.0 ./start-macos.sh
-# then open http://<tailscale-ip>:7860
-```
-
-The script also reads `.env` at startup, so `APP_BIND=0.0.0.0` and `APP_PORT`
-set there are picked up automatically without a command-line override each run.
-
-Keep `AUTH_ENABLED=true` (the default) before binding outside loopback. Do not
-expose this port directly to the public internet. To build a clickable app wrapper:
-
-```bash
-./build-macos-app.sh
-```
-
-<details>
-<summary>Cookbook, GPU, Ollama, and troubleshooting notes</summary>
-
-**Docker bundled services.** Compose starts Odysseus, ChromaDB, SearXNG, and
-ntfy. Odysseus and the bundled service ports bind to `127.0.0.1` by default, so
-they are reachable from the host but not exposed to your LAN/public internet
-unless you opt in.
-
-**Cookbook storage in Docker.** Downloads live in `./data/huggingface`
-(`~/.cache/huggingface` in the container). Cookbook-installed Python CLIs and
-serve engines live in `./data/local` (`~/.local` in the container), so they
-survive container recreation.
-
-**Remote servers.** In **Cookbook -> Settings -> Servers**, generate the
-Odysseus SSH key and add the public key to the remote server's
-`~/.ssh/authorized_keys`. From the host you can also run:
-
-```bash
-ssh-copy-id -i data/ssh/id_ed25519.pub user@server
-```
-
-**Docker GPU overlays.** CPU-only users can skip this section. Cookbook can
-only detect GPUs that Docker exposes to the container — if the host runtime or
-device passthrough is not configured, Cookbook sees the iGPU, another card, or
-CPU instead of your intended GPU.
-
-For NVIDIA, `scripts/check-docker-gpu.sh` diagnoses GPU passthrough and can
-optionally install the host runtime or update `.env`.
-
-```bash
-# Read-only diagnostic (default — installs nothing, never edits .env):
-scripts/check-docker-gpu.sh
-
-# Print OS-specific install commands without running them:
-scripts/check-docker-gpu.sh --print-install-commands
-
-# Install NVIDIA Container Toolkit on Ubuntu/Debian (requires sudo):
-scripts/check-docker-gpu.sh --install-nvidia-toolkit
-
-# Write COMPOSE_FILE to .env (only when GPU passthrough is confirmed working):
-scripts/check-docker-gpu.sh --enable-nvidia-overlay
-
-# Full assisted setup — install toolkit, then enable overlay if passthrough works:
-scripts/check-docker-gpu.sh --install-nvidia-toolkit --enable-nvidia-overlay
-```
-
-Safety notes:
-- The app never installs host GPU runtime automatically.
-- The app never edits `.env` automatically.
-- `.env` is only modified when `--enable-nvidia-overlay` is explicitly passed,
-  and only after GPU passthrough succeeds. `--yes` skips prompts but does not
-  bypass the passthrough gate.
-- `.env.bak.*` backups created by `--enable-nvidia-overlay` are ignored by
-  Git and the Docker build context.
-
-To enable manually without the script, add this to `.env`:
-
-```bash
-COMPOSE_FILE=docker-compose.yml:docker/gpu.nvidia.yml
-```
-
-**AMD / ROCm.** AMD setup is read-only diagnostic plus manual `.env` edit. Run:
-
-```bash
-scripts/check-docker-amd-gpu.sh
-```
-
-Then add the reported values to `.env`, replacing `RENDER_GID` with your host's
-numeric render group id:
-
-```bash
-COMPOSE_FILE=docker-compose.yml:docker/gpu.amd.yml
-RENDER_GID=989
-```
-
-For NVIDIA/AMD GPU support, also read the comments in the selected overlay file: docker/gpu.nvidia.yml or docker/gpu.amd.yml.
-
-**Stack-management UIs (Portainer, Coolify, Dockhand, etc.).** These tools
-often accept only a single Compose file and do not reliably honor `COMPOSE_FILE`
-or multiple `-f` overlays. CLI users should keep using the `COMPOSE_FILE`
-overlay workflow above. For stack UIs, point the stack at one of the standalone
-files instead, which bundle the base stack plus the GPU settings:
-
-- `docker-compose.gpu-nvidia.yml` — still requires the NVIDIA Container Toolkit
-  on the host.
-- `docker-compose.gpu-amd.yml` — still requires host ROCm/kfd/DRI setup, the
-  `video`/`render` group membership, and `RENDER_GID` when needed.
-
-The base `docker-compose.yml` plus the `docker/gpu.*.yml` overlays remain the
-source of truth; the standalone files mirror them for single-file deployments.
-
-Verify after enabling either overlay:
-
-```bash
-docker compose exec odysseus nvidia-smi -L   # NVIDIA
-docker compose exec odysseus sh -lc 'test -e /dev/kfd && test -d /dev/dri && ls -l /dev/kfd /dev/dri/renderD*'  # AMD
-```
-
-> **GPU passthrough ≠ llama.cpp CUDA.** `nvidia-smi` passing inside the
-> container confirms Docker GPU access, but llama.cpp also needs `cudart` and
-> the CUDA Toolkit at runtime. If Cookbook logs show `Unable to find cudart
-> library`, `Could NOT find CUDAToolkit`, `CUDA Toolkit not found`, or
-> tensors/layers assigned to CPU, that is a Cookbook/llama.cpp build issue —
-> not a Docker passthrough failure. Re-install the serve engine via
-> **Cookbook → Dependencies** to get a CUDA-enabled build.
->
-> The same split applies to AMD/ROCm: seeing `/dev/kfd` and `/dev/dri` inside
-> the container confirms device passthrough, not ROCm userspace or a
-> ROCm-enabled vLLM/llama.cpp build. `rocm-smi` and `rocminfo` are not expected
-> inside the slim Odysseus image.
-
-**Ollama with Docker.** If Ollama runs on the host, add this endpoint in
-Settings:
-
-```text
-http://host.docker.internal:11434/v1
-```
-
-Ollama must listen outside its own loopback interface:
-
-```bash
-OLLAMA_HOST=0.0.0.0:11434 ollama serve
-```
-
-This connects Odysseus in Docker to an Ollama server that is already running on
-your host machine; it does not start Ollama inside the container.
-`host.docker.internal` is Docker's hostname for the host machine from inside the
-container. Cookbook **Serve** is a separate workflow for serving downloaded
-models through Odysseus/llama.cpp, so Windows users with an existing Ollama
-install usually only need to add the endpoint in Settings.
-
-**Useful checks.**
-
-```bash
-docker compose ps
-docker compose logs --tail=120 odysseus
-docker compose logs odysseus | grep -E 'ChromaDB|MemoryVectorStore|DEGRADED'
-```
-
-**macOS details.** `start-macos.sh` installs Homebrew deps, creates the venv,
-runs setup, and starts uvicorn on port `7860` because AirPlay often holds
-`7000`. It uses llama.cpp/Ollama for Metal. vLLM/SGLang are CUDA/ROCm-only and
-do not run on macOS. MLX-only models are not served by Odysseus.
-
-</details>
-
-### Native Windows
-
-**One-command launcher** (creates the venv, installs deps, runs setup, starts the
-server; safe to re-run):
-
-```powershell
-git clone https://github.com/pewdiepie-archdaemon/odysseus.git
-cd odysseus
-powershell -ExecutionPolicy Bypass -File .\launch-windows.ps1
-```
-
-Or do it by hand:
-
-```powershell
-git clone https://github.com/pewdiepie-archdaemon/odysseus.git
-cd odysseus
-py -3.11 -m venv venv
-venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python setup.py
-python -m uvicorn app:app --host 127.0.0.1 --port 7000
-```
-
-If `python` points at an older interpreter, use `py -3.12` (or another installed
-3.11+ version) for the venv step.
-
-**Requirements:** Python 3.11+. The core app (chat, agent, memory, documents,
-email, calendar, deep research) runs fully native. For full **Cookbook** background
-model downloads and the agent shell tool, also install
-[Git for Windows](https://git-scm.com/download/win) (provides `bash.exe`).
-Local GPU *serving* of vLLM/SGLang needs Linux/WSL2; for a local model on Windows,
-[Ollama](https://ollama.com/download) is the easiest path — point Odysseus at
-`http://localhost:11434/v1` in Settings.
-
-Open `http://localhost:7000`, log in with the generated admin password,
-and configure everything else inside **Settings**.
-
-## Troubleshooting & Advanced Setup
-
-### `chromadb-client` conflicts with embedded ChromaDB
-If `chromadb-client` (the lightweight HTTP-only package) is installed alongside the full `chromadb` package, Odysseus starts but ChromaDB silently falls back to HTTP-only mode and fails.
-
-**Fix:** uninstall `chromadb-client` and force-reinstall the full package:
-```bash
-./venv/bin/pip uninstall chromadb-client -y
-./venv/bin/pip install --force-reinstall chromadb
-```
-
-### HTTPS + LAN/Tailscale exposure
-To expose Odysseus on a local network or Tailscale with HTTPS:
-1. Change the bind address to `0.0.0.0` in `.env` (`APP_BIND=0.0.0.0` or `ODYSSEUS_HOST=0.0.0.0`).
-2. Generate a locally-trusted cert for your LAN/Tailscale IPs using [mkcert](https://github.com/FiloSottile/mkcert):
-   ```bash
-   mkcert -install
-   mkcert -cert-file cert.pem -key-file key.pem 192.168.1.100 tailscale-ip
-   ```
-3. Run `uvicorn` with the generated certs:
-   ```bash
-   python -m uvicorn app:app --host 0.0.0.0 --port 7000 --ssl-certfile=cert.pem --ssl-keyfile=key.pem
-   ```
-4. Install the `mkcert` CA on any other device you want to access Odysseus from (e.g., for iOS, email the `rootCA.pem` to yourself, install the profile, and trust it in Certificate Trust Settings).
-
-### Optional Dependencies
-`requirements-optional.txt` contains packages that unlock extra features. It is not installed by default.
-
-| Package | Feature unlocked |
-|---------|-----------------|
-| `faster-whisper` | Local speech-to-text (microphone -> text) via the "local" STT provider. |
-| `duckduckgo-search` | DuckDuckGo as a search provider option. |
-| `PyMuPDF` | PDF page rendering in the side viewer panel and form-filling. (Note: AGPL-3.0) |
-| `markitdown` | Office/EPUB document text extraction (converts .docx/.xlsx/.pptx/.xls/.epub to Markdown). |
-
-## Security Notes
-Odysseus is a self-hosted workspace with powerful local tools: shell access, file uploads, model downloads, web research, email/calendar integrations, and API tokens. Treat it like an admin console.
-
-- Keep `AUTH_ENABLED=true` for any network-accessible deployment.
-- Keep `LOCALHOST_BYPASS=false` outside local development.
-- Use `SECURE_COOKIES=true` when Odysseus is served through HTTPS by a trusted reverse proxy or private access gateway.
-- Do not expose it directly to the public internet without HTTPS and a trusted reverse proxy or private access layer.
-- Keep `.env`, `data/`, `logs/`, databases, uploads, generated media, backups, auth/session files, API keys, and model/provider tokens out of Git and private shares. They are ignored by default.
-- Review `data/auth.json` after first boot: disable open signup unless you intentionally want it, make only your own account admin, and keep demo/test accounts non-admin.
-- Non-admin users do not get shell/Python/file read/write by default, and admin-only routes/tools such as MCP management, API tokens, webhooks, model/cookbook serving, backup/vault, and app settings are admin-gated. Other features are controlled by per-user privileges, so review each user's privileges before exposing a deployment.
-- Rotate any API keys or tokens that were ever pasted into a shared chat, demo, screenshot, or log.
-- If you enable API tokens or webhooks, create separate tokens per integration and delete unused ones.
-- Prefer binding manual development runs to `127.0.0.1`; bind to `0.0.0.0` only when you intentionally want LAN/reverse-proxy access.
-- Keep ChromaDB, SearXNG, ntfy, Ollama, vLLM, llama.cpp, databases, and raw model/provider APIs internal-only. Expose only the authenticated Odysseus web/API entrypoint through your trusted proxy or private access layer.
-- Before publishing a fork, run `git status --short` and confirm no private files from `.env`, `data/`, `logs/`, uploads, backups, or local databases are staged.
-
-### Private or proxied deployments
-Odysseus serves plain HTTP on its app port. Docker Compose binds Odysseus and the bundled services to `127.0.0.1` by default, so a typical production/private setup is:
-
-1. Keep Odysseus on localhost, for example `127.0.0.1:7000`.
-2. Terminate HTTPS at a trusted reverse proxy or private access gateway.
-3. Put the authenticated Odysseus web/API entrypoint behind that layer.
-4. Keep raw service and model ports internal-only.
-
-Cloudflare Access, Tailscale, Caddy, nginx, and Traefik can all fit this pattern; none are required by Odysseus. If your access layer reaches Odysseus on the same host, proxy to `http://127.0.0.1:7000` and keep `AUTH_ENABLED=true`, `LOCALHOST_BYPASS=false`, and `SECURE_COOKIES=true`.
-
-Common internal-only ports from the default docs/compose setup:
-
-| Port | Service |
-|---|---|
-| `7000` | Odysseus raw app port |
-| `8080` | SearXNG |
-| `8091` | ntfy |
-| `8100` | ChromaDB host port for manual/compose access |
-| `11434` | Ollama |
-| `8000-8020` | Common local model/provider APIs |
-
-## 🇧🇷 Sobre Este Fork PT-BR
-
-Este é um **fork de tradução oficial** mantido para a comunidade de língua portuguesa. 
-
-### O que é diferente?
-
-- ✅ Interface completa traduzida para português brasileiro (827+ strings)
-- ✅ Facilitadores de instalação para Windows/Linux/Mac
-- ✅ Documentação em português ([INSTALL_PTBR.md](INSTALL_PTBR.md))
-- ✅ Totalmente compatível com o projeto original
-- ✅ Baseado na branch `feature/pt-br-translation`
-
-### Como contribuir com melhorias na tradução?
-
-1. Abra uma [issue](https://github.com/FinweeJur/odysseus/issues) se encontrar strings não traduzidas
-2. Faça um PR com melhorias de tradução
-3. Seu feedback ajuda a comunidade brasileira!
-
-### Mantém-se atualizado com o projeto original?
-
-Sim! Este fork sincroniza regularmente com a versão original ([pewdiepie-archdaemon/odysseus](https://github.com/pewdiepie-archdaemon/odysseus)) para receber novas funcionalidades e correções.
+### Credenciais Padrão
+- **Usuário:** `admin`
+- **Senha:** exibida no terminal na primeira execução
+- **Mude na primeira vez** em Settings → Geral
 
 ---
 
-## Contributing (Original)
+## 📋 Requisitos Mínimos
 
-Help is welcome. The best entry points are fresh-install testing, provider setup
-bugs, mobile/editor polish, docs, and small focused refactors. See
-[ROADMAP.md](ROADMAP.md) for the current help-wanted list.
+- **Python:** 3.11+ (3.12 recomendado)
+- **RAM:** 8GB (16GB ideal para modelos locais)
+- **Disco:** 50GB+ (para modelos de IA)
+- **GPU (Opcional):** NVIDIA CUDA ou AMD ROCm para acelerar
 
-## Configuration
-Most setup is done inside the app with `/setup` or **Settings**. Use `.env`
-for deployment-level defaults and secrets you want present before first boot.
-Key settings:
+### Recomendado: Instalar Ollama
+Para usar modelos de IA locais (melhor experiência):
+- Download: https://ollama.ai
+- Modelos recomendados:
+  - `qwen2.5:7b-instruct` — Bom equilíbrio (4.7GB)
+  - `gemma2:2b` — Rápido (1.6GB)
 
-| Variable | Default | Description |
-|---|---|---|
-| `LLM_HOST` | `localhost` | Your LLM server (e.g. `llm-host.local:8000`) |
-| `LLM_HOSTS` | -- | Comma-separated list for model discovery |
-| `OPENAI_API_KEY` | -- | Optional OpenAI key. Prefer adding providers in the app unless pre-seeding. |
-| `SEARXNG_INSTANCE` | `http://localhost:8080` | SearXNG URL. Docker overrides this to `http://searxng:8080`. |
-| `SEARXNG_SECRET` | generated on first Docker boot | Optional SearXNG cookie/CSRF secret. Leave blank unless you need to pin it. |
-| `APP_BIND` | `127.0.0.1` | Docker Compose host bind address for the web UI. Use `0.0.0.0` only for intentional LAN/reverse-proxy access. |
-| `APP_PORT` | `7000` | Docker Compose host port for the web UI. |
-| `AUTH_ENABLED` | `true` | Enable/disable login |
-| `LOCALHOST_BYPASS` | `false` | Development-only auth bypass for loopback requests. Keep false for shared/network deployments. |
-| `SECURE_COOKIES` | `false` | Set true when serving Odysseus through HTTPS at a trusted proxy or private access gateway. |
-| `DATABASE_URL` | `sqlite:///./data/app.db` | Database connection string |
-| `CHROMADB_HOST` | `localhost` | ChromaDB host for vector memory. Docker overrides this to `chromadb`. |
-| `CHROMADB_PORT` | `8100` | ChromaDB port for manual host runs. Docker overrides this to `8000`. |
-| `EMBEDDING_URL` | -- | OpenAI-compatible embeddings endpoint |
+---
 
-### Built-in MCP servers (optional setup)
+## ⚙️ Configuração
 
-Odysseus auto-registers a few built-in MCP servers at startup. The npx-based ones (currently the browser server, `@playwright/mcp`) only start when their npm package is already in the local npx cache. If a package isn't cached, that server is skipped with a startup log message explaining what to do, so a fresh install does not block on a multi-minute npm download or hang if Playwright system deps are missing.
+### Primeira Vez
+1. Inicie Cutia
+2. Login com credenciais padrão
+3. Vá a **Settings → Geral**
+4. Configure seu modelo de IA (Ollama, OpenAI, etc.)
+5. Configure outras integrações conforme necessário
 
-To enable the browser MCP (page navigation, screenshots, vision), run once:
+### Variáveis de Ambiente (.env)
 
-```bash
-npx -y @playwright/mcp@latest --version
+Crie um arquivo `.env` com:
+
+```env
+# Servidor
+SERVER_PORT=7000
+SERVER_HOST=127.0.0.1
+
+# Modelo de IA Local
+LLM_PROVIDER=ollama
+LLM_URL=http://localhost:11434/v1
+LLM_MODEL=qwen2.5:7b-instruct-q4_K_M
+
+# Banco de Dados
+DATABASE_URL=sqlite:///./data/app.db
+
+# Segurança
+AUTH_ENABLED=true
+LOCALHOST_BYPASS=false
+SECURE_COOKIES=false
+
+# Opcional: API External
+OPENAI_API_KEY=seu_key_aqui
 ```
 
-That installs `@playwright/mcp` plus Playwright (~300MB total). Restart Odysseus and the server will register at startup.
+### Configurações Importantes
 
-## Architecture
+| Variável | Padrão | Descrição |
+|----------|--------|-----------|
+| `SERVER_PORT` | 7000 | Porta do app |
+| `SERVER_HOST` | 127.0.0.1 | Endereço (0.0.0.0 para rede) |
+| `LLM_PROVIDER` | ollama | Provedor de IA (ollama, openai, etc.) |
+| `AUTH_ENABLED` | true | Requer login |
+| `LOCALHOST_BYPASS` | false | Bypass auth local (dev only) |
+| `SECURE_COOKIES` | false | true em produção HTTPS |
+| `DATABASE_URL` | sqlite | Caminho do banco de dados |
+
+---
+
+## 🔐 Segurança
+
+Cutia é poderoso — trate como um console administrativo:
+
+### ✅ Sempre Faça Isso
+- ✓ Mantenha `AUTH_ENABLED=true`
+- ✓ Use senhas fortes
+- ✓ Não exponha na internet sem HTTPS
+- ✓ Use reverse proxy com autenticação (Tailscale, Cloudflare, nginx)
+- ✓ Mantenha `.env` e `data/` fora do Git
+
+### ❌ Nunca Faça Isso
+- ✗ Exponha diretamente na internet pública
+- ✗ Use localhost_bypass em produção
+- ✗ Compartilhe senhas em chat/logs
+- ✗ Deixe default credentials após setup
+
+### Deployment Seguro
 ```
-app.py                   # FastAPI entry point
-core/      auth, database, middleware, constants
-src/       llm_core, agent_loop, agent_tools, chat_processor, search/
-routes/    chat, session, document, memory, model … endpoints
-services/  docs, memory, search, hwfit (Cookbook) …
-static/    index.html + app.js + style.css + js/ (modular front-end)
-docs/      landing page (index.html) + preview clips
+Internet
+    ↓
+[Reverse Proxy com HTTPS]
+    ↓ (conexão criptografada)
+[Cutia rodando em 127.0.0.1:7000]
+    ↓
+[Modelos IA locais/APIs]
 ```
 
 ---
 
-## 🙏 Créditos
+## 🐛 Problemas Comuns
 
-### Projeto Original
-- **[Odysseus](https://github.com/pewdiepie-archdaemon/odysseus)** — Criado por [@pewdiepie-archdaemon](https://github.com/pewdiepie-archdaemon)
-  - Workspace AI self-hosted incrível
-  - Licença: MIT
+### "Cutia não abre"
+```bash
+# Verifique se está rodando
+ps aux | grep python
 
-### Tradução PT-BR
-- **Tradução:** Comunidade brasileira
+# Verifique a porta
+netstat -tulpn | grep 7000
+
+# Reinicie
+# Windows: Pressione Ctrl+C, depois `python app.py` de novo
+# Linux: `kill $(lsof -t -i:7000)` e reinicie
+```
+
+### "Erro ao carregar modelos"
+```bash
+# Verifique se Ollama está rodando
+ollama list
+
+# Se não tiver nenhum modelo
+ollama pull qwen2.5:7b-instruct
+
+# Reinicie Cutia
+```
+
+### "Strings ainda em inglês"
+- Você está na branch correta? `git branch`
+- Limpe cache: `Ctrl+Shift+Del` no navegador
+- Reinicie o servidor
+
+---
+
+## 🛠️ Instaladores Facilitados
+
+Não quer linhas de comando? Temos scripts automáticos:
+
+### Windows (PowerShell)
+```powershell
+.\install-ptbr.ps1
+```
+- Verifica requisitos
+- Configura ambiente Python
+- Oferece iniciar Cutia após instalação
+
+### Linux/Mac (Bash)
+```bash
+./install-ptbr.sh
+```
+- Verifica requisitos
+- Configura venv
+- Oferece iniciar Cutia
+
+Veja [INSTALL_PTBR.md](INSTALL_PTBR.md) para detalhes completos.
+
+---
+
+## 📚 Documentação Completa
+
+- **[INSTALL_PTBR.md](INSTALL_PTBR.md)** — Guia de instalação detalhado
+- **[ROADMAP.md](ROADMAP.md)** — Planos futuros
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** — Como contribuir
+- **[SECURITY.md](SECURITY.md)** — Boas práticas de segurança
+- **[PR_I18N_PROPOSAL.md](PR_I18N_PROPOSAL.md)** — Proposta de sistema de idiomas
+
+---
+
+## 🤝 Contribuindo
+
+Encontrou algo em inglês? Quer melhorar a tradução?
+
+1. **Abra uma issue:**
+   ```
+   Título: [PT-BR] String não traduzida em X
+   Descrição: Identifique a string e local
+   ```
+
+2. **Ou envie um PR:**
+   ```bash
+   git checkout feature/pt-br-translation
+   # Edite os arquivos
+   git commit -m "fix: Traduzir X para português"
+   git push origin feature/pt-br-translation
+   ```
+
+---
+
+## 🌍 Sobre Este Fork
+
+Este é um **fork comunitário de tradução**, mantido para:
+- 🇧🇷 Brasil
+- 🇵🇹 Portugal
+- 🌎 Comunidade lusófona global
+
+### Sincronização
+- Atualizamos regularmente com a versão original
+- Novas funcionalidades do Odysseus chegam aqui automaticamente
+- Você sempre tem a versão mais recente + em português
+
+### Créditos
+- **Odysseus Original:** [@pewdiepie-archdaemon](https://github.com/pewdiepie-archdaemon)
+- **Tradução PT-BR:** Comunidade brasileira
 - **Coordenação:** [@FinweeJur](https://github.com/FinweeJur)
 - **Assistência IA:** Claude (Anthropic)
 
-### Tecnologias & Dependências
-- FastAPI, SQLite, ChromaDB, Ollama, vLLM, llama.cpp, Playwright
-- Veja `requirements.txt` para a lista completa
+---
 
-### Componentes Adaptados
-- Deep Research: Adaptado de [Alibaba DeepResearch](https://github.com/Alibaba-NLP/DeepResearch)
-- Cookbook: Baseado em [llmfit](https://github.com/AlexsJones/llmfit)
-- Agent Tools: Construído em [opencode](https://github.com/anomalyco/opencode)
+## 📄 Licença
+
+MIT — Use livremente, comercial ou pessoal, desde que respeite a licença original.
 
 ---
 
-**Este é um fork comunitário. Todos os créditos pelo design e engenharia original vão ao [@pewdiepie-archdaemon](https://github.com/pewdiepie-archdaemon). Contribuições de tradução e melhorias são bem-vindas! 🚀**
+## 🚀 Próximos Passos
 
-## Data
-All user data lives in `data/` (gitignored): `app.db` (sessions, messages, documents),
-`memory.json`, `presets.json`, `uploads/`, `personal_docs/`, `chroma/`, `settings.json`.
+1. **Instale Cutia** (use o script facilitado)
+2. **Configure seu modelo de IA** em Settings
+3. **Explore as funcionalidades** — comece com Chat
+4. **Configure integrações** — E-mail, Calendário, etc.
+5. **Customize** — Tema, atalhos de teclado, etc.
 
-## Star History
+---
 
-<a href="https://www.star-history.com/?repos=pewdiepie-archdaemon%2Fodysseus&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=pewdiepie-archdaemon/odysseus&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=pewdiepie-archdaemon/odysseus&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=pewdiepie-archdaemon/odysseus&type=date&legend=top-left" />
- </picture>
-</a>
+## 💬 Perguntas? Sugestões?
 
-## License
-MIT -- see [LICENSE](LICENSE) and [ACKNOWLEDGMENTS.md](ACKNOWLEDGMENTS.md).
+- 💬 Abra uma [issue](https://github.com/FinweeJur/odysseus/issues)
+- 🤝 Envie um [PR](https://github.com/FinweeJur/odysseus/pulls) com melhorias
+- 📖 Leia [CONTRIBUTING.md](CONTRIBUTING.md)
 
-```
-                                  |
-                                 |||
-                                |||||
-                  |    |    |   |||||||
-                 )_)  )_)  )_)   ~|~
-                )___))___))___)\  |
-               )____)____)_____)\\|
-             _____|____|____|_____\\\__
-             \                       /
-       ~^~^~~^~^~~^~^~~^~^~~^~^~~^~^~~^~^~~^~^~
-               ~^~  all aboard!  ~^~
-       ~^~^~~^~^~~^~^~~^~^~~^~^~~^~^~~^~^~~^~^~
-```
+---
+
+**Bem-vindo ao Cutia! 🐭 Sua IA privada, local, brasileira.**
+
+*"Ágil, inteligente, adaptável — como uma cutia."*
