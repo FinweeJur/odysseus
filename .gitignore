@@ -5,6 +5,11 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+!build/launcher.py
+!build/cutia_installer.iss
+!build/CutiaLauncher.spec
+!build/cutia.ico
+!build/cutia_icon.png
 !static/js/editor/build/
 venv/
 venv_*/
