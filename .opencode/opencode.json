@@ -1,0 +1,7 @@
+{
+  "name": "Cutia (odysseus-pt)",
+  "type": "python-flask",
+  "dev": "python app.py",
+  "stage": "active-translation",
+  "description": "PT-BR translation fork de Odysseus — workspace de IA self-hosted com branding cerrado (chat, agentes, docs, deep research)"
+}
